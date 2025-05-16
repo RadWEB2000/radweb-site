@@ -1,0 +1,99 @@
+{
+    "brand": {
+        "title": "RadWEB",
+        "logo": "",
+        "uri": "/"
+    },
+    "menu": [
+        {
+            "label": "Start",
+            "uri": "/"
+        },
+        {
+            "label": "O mnie",
+            "uri": "/o-mnie",
+            "submenu": [
+                {
+                    "label": "Kim jestem?",
+                    "uri": "/o-mnie/kim-jestem"
+                },
+                {
+                    "label": "Doświadczenie",
+                    "uri": "/o-mnie/doswiadczenie"
+                }
+            ]
+        },
+        {
+            "label": "Usługi",
+            "uri": "/uslugi",
+            "submenu": [
+                {
+                    "label": "SEO",
+                    "uri": "/uslugi/seo"
+                },
+                {
+                    "label": "Strony internetowe",
+                    "uri": "/uslugi/strony-internetowe"
+                },
+                {
+                    "label": "Content marketing",
+                    "uri": "/uslugi/seo/content-marketing"
+                },
+                {
+                    "label": "Pozycjonowanie lokalne",
+                    "uri": "/uslugi/seo/lokalne"
+                },
+                {
+                    "label": "Pozycjonowanie e-commerce",
+                    "uri": "/uslugi/seo/e-commerce"
+                },
+                {
+                    "label": "Link building",
+                    "uri": "/uslugi/seo/link-building"
+                },
+                {
+                    "label": "Audyty stron",
+                    "uri": "/uslugi/audyty"
+                }
+            ]
+        },
+        {
+            "label": "Blog",
+            "uri": "/blog",
+            "submenu": [
+                {
+                    "label": "Programowanie",
+                    "uri": "/blog"
+                },
+                {
+                    "label": "Pozycjonowanie",
+                    "uri": "/blog"
+                },
+                {
+                    "label": "Biznes",
+                    "uri": "/blog"
+                },
+                {
+                    "label": "Systemy operacyjne",
+                    "uri": "/blog"
+                },
+                {
+                    "label": "Copywriting",
+                    "uri": "/blog"
+                }
+            ]
+        },
+        {
+            "label": "Projekty",
+            "uri": "/projekty"
+        },
+        {
+            "label": "Case studies",
+            "uri": "/case-studies"
+        },
+        {
+            "label": "Kontakt",
+            "uri": "/kontakt"
+        }
+    ]
+}
