@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "@/styles/Globals.css";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +28,55 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <nav className="flex items-center justify-between" >
+          <Link href="/" hrefLang="pl_PL" >RadWEB</Link>
+          <menu className="flex items-center justify-center" >
+            <Link href="/" hrefLang="pl_PL" >O mnie</Link>
+            <Link href="/" hrefLang="pl_PL" >Blog</Link>
+            <Link href="/" hrefLang="pl_PL" >Oferta</Link>
+            <Link href="/" hrefLang="pl_PL" >Projekty</Link>
+            <Link href="/" hrefLang="pl_PL" >Case study</Link>
+            <Link href="/" hrefLang="pl_PL" >Kontakt</Link>
+          </menu>
+        </nav>
         {children}
+        <footer>
+          <div></div>
+          <div className="grid grid-cols-3" >
+            <div className="flex flex-col">
+              <h4>Ogólne</h4>
+              <ul className="flex flex-col">
+                <Link href="#" hrefLang="pl_PL" >Start</Link>
+                <Link href="#" hrefLang="pl_PL" >O mnie</Link>
+                <Link href="#" hrefLang="pl_PL" >Projekty</Link>
+                <Link href="#" hrefLang="pl_PL" >Słownik</Link>
+                <Link href="#" hrefLang="pl_PL" >Kontakt</Link>
+              </ul>
+            </div>
+            <div className="flex flex-col">
+              <h4>Wiedza</h4>
+              <ul className="flex flex-col">
+                <Link href="#" hrefLang="pl_PL" >Programowanie</Link>
+                <Link href="#" hrefLang="pl_PL" >SEO</Link>
+                <Link href="#" hrefLang="pl_PL" >SEM</Link>
+                <Link href="#" hrefLang="pl_PL" >Systemy operacyjne</Link>
+              </ul>
+            </div>
+            <div className="flex flex-col">
+              <h4>Oferta</h4>
+              <ul className="flex flex-col">
+                <Link href="#" hrefLang="pl_PL" >Pozycjonowanie stron</Link>
+                <Link href="#" hrefLang="pl_PL" >Content marketing</Link>
+                <Link href="#" hrefLang="pl_PL" >Link building</Link>
+                <Link href="#" hrefLang="pl_PL" >Pozycjonowanie lokalne</Link>
+                <Link href="#" hrefLang="pl_PL" >Pozycjonowanie e-commerce</Link>
+                <Link href="#" hrefLang="pl_PL" >Pozycjonowanie Bing</Link>
+                <Link href="#" hrefLang="pl_PL" >Audyty stron</Link>
+              </ul>
+            </div>
+          </div>
+          <div></div>
+        </footer>
       </body>
     </html>
   );
